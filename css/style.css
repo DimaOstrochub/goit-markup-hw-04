@@ -20,7 +20,7 @@ li{
   }
 
 
-  ::after ::before{
+ *, ::after ::before{
     box-sizing: border-box;
   }
 
@@ -369,6 +369,8 @@ footer{
     letter-spacing: 0.03em;
     color: var(--main-text-color);
 
+    display: flex;
+    justify-content: center;
     margin-bottom: 10px;
 }
 
@@ -378,6 +380,9 @@ footer{
     line-height: 1.5;
     letter-spacing: 0.03em;
     color: var(--brand-color);
+
+    display: flex;
+    justify-content: center;
 }
 
 .team-items{
@@ -500,7 +505,7 @@ footer{
 
 
 .container{
-    outline: 2px solid teal;
+   
     margin-left: auto;
     margin-right: auto;
     padding-right: 15px;
