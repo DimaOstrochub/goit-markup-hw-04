@@ -12,9 +12,9 @@
 <body>
     <!-- Шапка сайта -->
     
-    <header class="page-header">
-        
-        <nav class="container main-nav">
+    <header class="container page-header">
+        <div class="container-two">
+        <nav class="main-nav ">
         
             <a href="./index.html" class="logo"><span class="logo-web">Web</span>Studio</a>
             
@@ -23,13 +23,14 @@
                 <li class="item"><a href="./portfolio.html" class="link"><span class="portfolio">Портфолио</span></a></li>
                 <li class="item"><a href="./index.html" class="link"><span class="contacts">Контакты</span></a></li>
             </ul>
-            
-            
-            <ul class="site-contacts">
-                <li class="item"><a class="link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-                <li class="item"><a class="link" href="tel:+380961111111">+38 096 111 11 11</a></li>
-            </ul>
         </nav>
+           
+                <ul class="site-contacts">
+                    <li class="item"><a class="link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+                    <li class="item"><a class="link" href="tel:+380961111111">+38 096 111 11 11</a></li>
+                </ul>
+            
+        </div>
     </header>
 
 
@@ -37,14 +38,14 @@
     <!-- Главный контент -->
     <main>
     <!-- Решения для бизнеса -->
-        <section class="main-service">
+        <section class="section main-service">
            <div class="container">
-            <h1 class="main-service-title">Эффективные решения для вашего бизнеса</h1>
+            <h1 class="main-service-title">Эффективные решения<br>для вашего бизнеса</h1>
             <button type="button" class="button"><span class="button-text">Заказать услугу</span></button>
            </div>
         </section>
     <!-- Преймущества -->
-    <section class="benefits">
+    <section class="section benefits">
         <div class="container">
             <h2 class="benefits-title">Наши преймущества</h2>
         <ul class="benefits-items">
@@ -71,7 +72,7 @@
         </div>
     </section>
     <!-- Чем мы занимаемся -->
-    <section class="occupation-section">
+    <section class="section occupation-section">
       <div class="container">
         <h2 class="occupation-title">Чем мы занимаемся</h2>
         <ul class="occupation-images">
@@ -82,32 +83,40 @@
       </div>
     </section>
     <!-- Наша команда -->
-    <section class="team-section">
+    <section class="section team-section">
         <div class="container">
             <h2 class="team-title">Наша команда</h2>
         <ul class="team-list">
             <li class="team-items">
                 <img src="./images/1portrait.jpg" alt="first portrait" width="270" height="260">
-                <h3 class="team-subtitle">Игорь Демьяненко</h3>
-                <p class="team-text">Product Designer</p>
+                <div class="team-list-container">
+                    <h3 class="team-subtitle">Игорь Демьяненко</h3>
+                    <p class="team-text">Product Designer</p>
+                </div>
             </li>
 
             <li class="team-items">
                 <img class="picture" src="./images/2portrait.jpg" alt="second portrait" width="270" height="260">
-                <h3 class="team-subtitle">Ольга Репина</h3>
-                <p class="team-text">Frontend Developer</p>
+                <div class="team-list-container">
+                    <h3 class="team-subtitle">Ольга Репина</h3>
+                    <p class="team-text">Frontend Developer</p>
+                </div>
             </li>
 
             <li class="team-items">
                 <img src="./images/3portrait.jpg" alt="third portrait" width="270" height="260">
-                <h3 class="team-subtitle">Николай Тарасов</h3>
-                <p class="team-text">Marketing</p>
+                <div class="team-list-container">
+                    <h3 class="team-subtitle">Николай Тарасов</h3>
+                    <p class="team-text">Marketing</p>
+                </div>
             </li>
 
             <li class="team-items">
                 <img src="./images/4portrait.jpg" alt="fourth portrait" width="270" height="260">
-                <h3 class="team-subtitle">Михаил Ермаков</h3>
-                <p class="team-text">UI Designer</p>
+                <div class="team-list-container">
+                    <h3 class="team-subtitle">Михаил Ермаков</h3>
+                    <p class="team-text">UI Designer</p>
+                </div>
             </li>
         </ul>
         </div>
@@ -117,9 +126,8 @@
     <!-- Футер -->
     <footer>
         <div class="container">
-            <div class="container-logo">
             <a href="./index.html" class="logo-footer"><span class="logo-web">Web</span>Studio</a>
-            </div>
+            
             <address class="address">
             <ul class="address-list">
                 <li class="item">
