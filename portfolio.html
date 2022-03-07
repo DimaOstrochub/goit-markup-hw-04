@@ -11,8 +11,8 @@
 </head>
 <body>
     <!-- Шапка -->
-    <header class="container page-header">
-        <div class="container-two">
+    <header class="page-header">
+        <div class="container header-container">
             <nav class="main-nav">
             
                 <a href="./index.html" class="logo"><span class="logo-web">Web</span>Studio</a>
@@ -23,17 +23,27 @@
                     <li class="item"><a href="./index.html" class="link">Контакты</a></li>
                 </ul>
             </nav>
-                <ul class="site-contacts">
-                    <li class="item"><a class="link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-                    <li class="item"><a class="link" href="tel:+380961111111">+38 096 111 11 11</a></li>
-                </ul>   
+            <ul class="site-contacts">
+                <li class="item">
+                                            
+                    <a class="link" href="mailto:info@devstudio.com">
+                        <svg class="site-contacts-svg" width="16px" height="12px">
+                            <use href="./images/sprite1.svg#icon-mail"></use>
+                        </svg>   
+                        info@devstudio.com</a></li>
+                <li class="item"><a class="link" href="tel:+380961111111">
+                         <svg class="site-contacts-svg" width="10px" height="16px">
+                        <use href="./images/sprite1.svg#icon-phone"></use>
+                        </svg>   
+                        +38 096 111 11 11</a></li>
+            </ul>
             </div>     
     </header>
     <!-- Главный контент -->
 <main>
     <section class="section all-services-section">
        <div class="container">
-        <h1 class="all-services-title">Сервисы</h1>
+        <h1 class="all-services-title visually-hidden">Сервисы</h1>
         <ul class="button-list">
                 <li class="button-item"><button type="button" class="all-services-button current"><span class="button-text">Все</span></button></li>
                 <li class="button-item"><button type="button" class="all-services-button"><span class="button-text">Веб-сайты</span></button></li>
@@ -113,26 +123,66 @@
 </main>
  <!-- Футер -->
  <footer>
-     <div class="container">
-    <div class="container-logo">
-    <a href="./index.html" class="logo-footer"><span class="logo-web">Web</span>Studio</a>
-    </div>
-    <address class="address">
-    <ul>
-        <li class="item">
-            <a href="https://www.google.com.ua/maps" class="maps">г. Киев, пр-т Леси Украинки, 26</a>
-        </li>
+    <div class="container cont">
+            
+            
+        <div class="footer-container">
+         <a href="./index.html" class="logo-footer"><span class="logo-web">Web</span>Studio</a>
+         <address class="address">
+             <ul class="address-list">
+                 <li class="item">
+                     <a href="https://www.google.com.ua/maps" class="maps">г. Киев, пр-т Леси Украинки, 26</a>
+                 </li>
+ 
+                 <li class="item">
+                     <a href="mailto:info@example.com" class="contact">info@example.com</a>
+                 </li>
+ 
+                 <li class="item">
+                     <a href="tel:+380991111111" class="contact">+38 099 111 11 11</a>
+                 </li>
+             </ul>
+             </address>
+        </div>
+        <div class="footer-social-networks">
+         <h3 class="social-networks-title">Присойденяйтесь</h3>
+         <ul class="footer-action">
+             <li>
+                 <a class="icon-link" href="./index.html">
+                     <svg class="icon-svg" >
+                         <use href="./images/sprite1.svg#icon-instagram"></use>                                    
+                     </svg>
+                 </a>
+             </li>
+                                 
+             <li>
+                 <a class="icon-link" href="./index.html">
+                     <svg class="icon-svg" >
+                         <use href="./images/sprite1.svg#icon-twitter"></use>                                    
+                     </svg>
+                 </a>
+             </li>
+                                                                     
+             <li>
+                 <a class="icon-link" href="./index.html">
+                     <svg class="icon-svg" >
+                         <use href="./images/sprite1.svg#icon-facebook"></use>                                    
+                     </svg>
+                 </a>
+             </li>
 
-        <li class="item">
-            <a href="mailto:info@example.com" class="contact">info@example.com</a>
-        </li>
-
-        <li class="item">
-            <a href="tel:+380991111111" class="contact">+38 099 111 11 11</a>
-        </li>
-    </ul>
-    </address>
-    </div>
+             <li>
+                 <a class="icon-link" href="./index.html">
+                     <svg class="icon-svg" >
+                         <use href="./images/sprite1.svg#icon-linkedin"></use>                                   
+                     </svg>
+                 </a>
+             </li>
+         </ul>
+ </li>
+</ul>
+     </div>
+     </div>
     </footer>
 </body>
 </html>
