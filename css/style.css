@@ -152,28 +152,20 @@ h1,h2,h3,p{
     letter-spacing: 0.02em;
     text-decoration: none;
     color: var(--brand-color);
-    display: block;
-    list-style: none;
-    position: relative;
-    margin: 0;
-    padding: 0;
-   
-   
+    display: flex;
+    align-items: center;
 }
 
-.site-contacts .link:hover{
+.site-contacts .link:hover,
+.site-contacts .link:focus{
     color: var(--link-color);
     fill: var(--link-color);
 }
 
 .site-contacts-svg{
     margin-right: 10px;
-    fill: var(--brand-color);
-    
+    fill: currentColor; 
     padding: 0;
-}
-.site-contacts-svg:hover{
-    fill: var(--link-color);
 }
 
 
@@ -276,23 +268,35 @@ footer{
     margin-bottom: 20px;
 }
 .cont{
+    align-items: baseline;
     display: flex;
 }
 .footer-container{
     /* outline: 1px solid teal; */
     margin-right: 70px;
 }
-/* .social-networks-item{
-    outline: 1px solid red;
-   
-   width: 44px;
-   height: 30px;
-   display: flex;
-   justify-content: center;
-   align-items: flex-start;
-   background: rgba(255, 255, 255, 0.1);
-} */
-
+.footer-item{
+    width: 44px;
+    height: 44px;
+}
+.footer-item:not(:last-child){
+    margin-right: 10px;
+}
+.footer-link{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    display: flex;
+    color: var(--customers-fill-color);
+    align-items: center;
+    justify-content: center;
+    background: rgba(255, 255, 255, 0.1);
+}
+.footer-link:hover,
+.footer-link:focus{
+    color: #FFFFFF;
+    background: #2196F3;
+}
 
 
 
@@ -315,6 +319,10 @@ footer{
         ), url('../images/hero.jpg'); 
     background-position: center;
     background-size: cover;
+    background-repeat: no-repeat;
+    max-width: 1600px;
+    margin-left: auto;
+    margin-right: auto;
 
     
 }
@@ -400,23 +408,20 @@ footer{
 
 .benefits-list{
     display: flex;
-    flex-wrap: wrap;
-    width: 1170px;
-    margin: 0;
-    justify-content: center;
+    
 }
 
-.benefits-list .benefits-item{
+.benefits-item:not(:last-child){
     margin-right: 30px; 
-    width: 250px;
+    
 }
  
 .benefits-icon{
-    height: 54px;
+    height: 70px;
     width: 70px;
 }
 .benefits-container{
-    width: 270px;
+    border-radius: 4px;
     height: 120px;
     display: flex;
     align-items: center;
@@ -524,6 +529,10 @@ footer{
     margin: 0;
     padding: 0;
 }
+.team-item-container{
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
 
     /* Постоянные клиенты */
 
@@ -566,7 +575,8 @@ footer{
     justify-content: center;
     align-items: center;
 }
-.customers-link:hover{
+.customers-link:hover,
+.customers-link:focus {
     fill: var(--link-color);
     border: 1px solid var(--link-color);
 }
@@ -588,10 +598,12 @@ footer{
     border-top: 1px solid #ECECEC ;;
 }
 .all-services-button{
+    border: transparent;
+    padding: 6px 22px;
     background: #F5F4FA;
     border-radius: 4px;
     cursor: pointer;
-    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+   
 
 }
 .button-item{
@@ -625,6 +637,8 @@ footer{
 .all-services-button:hover,
 .all-services-button:focus {
     background: var(--link-color);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+    color: var(--main-bg-color);
 }
 
 .button-list{
@@ -660,7 +674,12 @@ footer{
     margin-right: 30px;
     margin-bottom: 30px;
 }
-.website-list .item:hover{
+.web-site-link{
+    text-decoration: none;
+}
+.web-site-link:hover,
+.web-site-link:focus{
+    display: block;
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
@@ -694,7 +713,7 @@ footer{
     padding-right: 15px;
     padding-left: 15px;
     width: 1200px;
-    border: none;
+    
 }
 
 /* Actions */
@@ -703,26 +722,31 @@ footer{
     display: flex;
     justify-content: center;
     align-items: center;
-    /* height: auto; */
     margin-top: 20px;
-    margin-bottom: 30px;
+}
+.action-item{
+    height: 44px;
+    width: 44px;
+}
+.action-item:not(:last-child){
+    margin-right: 10px;
 }
 .icon-link{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
     display: flex;
     color: var(--customers-fill-color);
     align-items: center;
     justify-content: center;
-    margin-right: 35px;
+   
 }
 .icon-link:hover{
     color: #FFFFFF;
     background: #2196F3;
-    height: 44px;
-    width: 44px;
-    border-radius: 50%;
 }
 .icon-svg{
-    width: 22px;
-    height: 22px;
+    width: 20px;
+    height: 20px;
     fill: currentColor;
 }
